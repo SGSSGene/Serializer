@@ -15,3 +15,4 @@
 	#include "armaTypes.h"
 #endif
 
+#include "is_serializable.h"
