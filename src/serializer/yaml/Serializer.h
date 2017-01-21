@@ -453,7 +453,7 @@ void write(std::string const& _file, T& _value) {
 	if (oFile.fail()) {
 		throw std::runtime_error("Opening file failed: " + _file);
 	}
-	oFile << serializer.getDataAsStr();
+	oFile << serializer.getDataAsStr() << "\n";
 	oFile.close();
 	if (oFile.fail()) {
 		throw std::runtime_error("Writing to file failed: " + _file);
